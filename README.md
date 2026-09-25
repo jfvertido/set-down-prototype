@@ -6,7 +6,7 @@ Live: https://set-down-prototype.vercel.app
 
 The motion spec is in [docs/motion-spec.md](docs/motion-spec.md). Its numbers live in code at [src/design/tokens.ts](src/design/tokens.ts).
 
-Screens and spec notes are in [design/set-down.pen](design/set-down.pen), a [pen.dev](https://pen.dev) file with every screen, the parking, crisis support and resuming states, and a spec card under each one. An earlier version is in [Figma](https://www.figma.com/design/LW6t6B0wYDiSXYYv2KCS4S), which doesn't have the three states.
+Screens and spec notes are in [design/set-down.pen](design/set-down.pen), a [pen.dev](https://pen.dev) file with every screen, the parking, crisis support and resuming states, and a spec card under each one. An earlier version is in [Figma](https://www.figma.com/design/LW6t6B0wYDiSXYYv2KCS4S).
 
 ## Run it
 
