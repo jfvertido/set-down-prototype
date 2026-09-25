@@ -1,0 +1,3557 @@
+{
+  "version": "2.19",
+  "children": [
+    {
+      "type": "frame",
+      "id": "Q5yNXw",
+      "x": 0,
+      "y": 0,
+      "name": "Components",
+      "fill": "#f3f0f5",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 32,
+      "padding": 40,
+      "children": [
+        {
+          "type": "text",
+          "id": "nf1iT",
+          "name": "Section title",
+          "fill": "#2b284f",
+          "content": "Components",
+          "fontFamily": "$font/family",
+          "fontSize": 26,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "m4S3w",
+          "name": "Buttons",
+          "fill": "$color/park/bg",
+          "cornerRadius": 16,
+          "gap": 24,
+          "padding": 24,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "g2Xnr4",
+              "name": "Button/Primary",
+              "reusable": true,
+              "width": 334,
+              "height": 52,
+              "fill": "$color/park/text",
+              "cornerRadius": "$radius/pill",
+              "padding": [
+                0,
+                24
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "R6mFVk",
+                  "name": "Label",
+                  "fill": "$color/park/bg",
+                  "content": "Park it",
+                  "fontFamily": "$font/family",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NGSlX",
+              "name": "Button/Quiet",
+              "reusable": true,
+              "width": 334,
+              "height": 44,
+              "cornerRadius": "$radius/pill",
+              "padding": [
+                0,
+                24
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lVQae",
+                  "name": "Label",
+                  "fill": "$color/park/muted",
+                  "content": "Skip",
+                  "fontFamily": "$font/family",
+                  "fontSize": 17,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T7b93H",
+          "name": "List and progress",
+          "fill": "$color/breathe/bg",
+          "cornerRadius": 16,
+          "gap": 40,
+          "padding": 24,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "zH0zx",
+              "name": "Parked item",
+              "reusable": true,
+              "width": 334,
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 4,
+                  "id": "D1YitD",
+                  "name": "Checkbox",
+                  "width": 14,
+                  "height": 14,
+                  "stroke": "$color/park/muted",
+                  "strokeWidth": 1.5,
+                  "strokeAlignment": "inner"
+                },
+                {
+                  "type": "text",
+                  "id": "yXjtb",
+                  "name": "Text",
+                  "fill": "$color/park/text",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Email Sam about the offsite",
+                  "fontFamily": "$font/family",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "ellipse",
+              "id": "yEmnI",
+              "name": "Progress dot/Not done",
+              "reusable": true,
+              "width": 8,
+              "height": 8,
+              "stroke": "$color/breathe/muted",
+              "strokeWidth": 1.5,
+              "strokeAlignment": "inner"
+            },
+            {
+              "type": "ellipse",
+              "id": "B9p6q",
+              "name": "Progress dot/Done",
+              "reusable": true,
+              "fill": "$color/breathe/muted",
+              "width": 8,
+              "height": 8,
+              "stroke": "$color/breathe/muted",
+              "strokeWidth": 1.5,
+              "strokeAlignment": "inner"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "k5wQ5",
+      "x": 0,
+      "y": 440,
+      "name": "01 Arrive",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "$color/dusk/top",
+            "position": 0
+          },
+          {
+            "color": "$color/dusk/mid",
+            "position": 0.55
+          },
+          {
+            "color": "$color/dusk/horizon",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        47,
+        28,
+        34,
+        28
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "PMqr4",
+          "name": "Time",
+          "fill": "$color/arrive/muted",
+          "content": "10:42 PM",
+          "fontFamily": "$font/family",
+          "fontSize": 15,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "G9Hc6",
+          "name": "Spacer",
+          "width": "fill_container",
+          "height": 128
+        },
+        {
+          "type": "frame",
+          "id": "l2CnPo",
+          "name": "Greeting",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$space/stack",
+          "children": [
+            {
+              "type": "text",
+              "id": "TKWtJ",
+              "name": "Display",
+              "fill": "$color/arrive/text",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "It's getting late.",
+              "lineHeight": 1.15,
+              "fontFamily": "$font/family",
+              "fontSize": 36,
+              "fontWeight": "500",
+              "letterSpacing": -0.36
+            },
+            {
+              "type": "text",
+              "id": "kyFmn",
+              "name": "Lede",
+              "fill": "$color/arrive/muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Ready to wind down?",
+              "lineHeight": 1.45,
+              "fontFamily": "$font/family",
+              "fontSize": 19,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Ya8VT",
+          "name": "Spacer",
+          "width": "fill_container",
+          "height": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "jfWbJ",
+          "name": "Actions",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$space/actions",
+          "children": [
+            {
+              "id": "j2HsTv",
+              "type": "ref",
+              "ref": "g2Xnr4",
+              "name": "Button/Primary",
+              "width": "fill_container",
+              "fill": "$color/arrive/text",
+              "descendants": {
+                "R6mFVk": {
+                  "content": "Begin",
+                  "fill": "$color/arrive/bg"
+                }
+              }
+            },
+            {
+              "type": "text",
+              "id": "c3Cqi6",
+              "name": "Hint (full text color over horizon band)",
+              "fill": "$color/arrive/text",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "About four minutes",
+              "textAlign": "center",
+              "fontFamily": "$font/family",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ktVLJ",
+      "x": 470,
+      "y": 440,
+      "name": "02 Brain dump",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$color/park/bg",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        47,
+        28,
+        34,
+        28
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "I8GQX",
+          "name": "Label",
+          "fill": "$color/park/text",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "What's still on your mind?",
+          "lineHeight": 1.25,
+          "fontFamily": "$font/family",
+          "fontSize": 26,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "Rpl2r",
+          "name": "Field",
+          "width": "fill_container",
+          "height": 180,
+          "fill": "#190f21",
+          "cornerRadius": "$radius/field",
+          "stroke": "#ede3d873",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "gRRcN",
+              "name": "Input",
+              "fill": "$color/park/text",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "email Sam about the offsite, dentist Thursday\nfinish the dec",
+              "lineHeight": 1.5,
+              "fontFamily": "$font/family",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lJuoO",
+          "name": "Spacer",
+          "width": "fill_container",
+          "height": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "B5eRlF",
+          "name": "Actions",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$space/actions",
+          "children": [
+            {
+              "id": "NgoAo",
+              "type": "ref",
+              "ref": "g2Xnr4",
+              "name": "Button/Primary",
+              "width": "fill_container",
+              "fill": "$color/park/text",
+              "descendants": {
+                "R6mFVk": {
+                  "content": "Park it",
+                  "fill": "$color/park/bg"
+                }
+              }
+            },
+            {
+              "id": "W0LKyS",
+              "type": "ref",
+              "ref": "NGSlX",
+              "name": "Button/Quiet",
+              "width": "fill_container",
+              "descendants": {
+                "lVQae": {
+                  "content": "Skip",
+                  "fill": "$color/park/muted"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "QjL3i",
+      "x": 940,
+      "y": 440,
+      "name": "03 Parked for tomorrow",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$color/park/bg",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        47,
+        28,
+        34,
+        28
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "qq9e8",
+          "name": "Title",
+          "fill": "$color/park/text",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Parked for tomorrow",
+          "lineHeight": 1.25,
+          "fontFamily": "$font/family",
+          "fontSize": 26,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "uXjkJ",
+          "name": "List",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "id": "QO1Yd",
+              "type": "ref",
+              "ref": "zH0zx",
+              "name": "Parked item",
+              "width": "fill_container",
+              "descendants": {
+                "yXjtb": {
+                  "content": "Email Sam about the offsite"
+                }
+              }
+            },
+            {
+              "id": "Zhmlc",
+              "type": "ref",
+              "ref": "zH0zx",
+              "name": "Parked item",
+              "width": "fill_container",
+              "descendants": {
+                "yXjtb": {
+                  "content": "Dentist Thursday"
+                }
+              }
+            },
+            {
+              "id": "S3W8g",
+              "type": "ref",
+              "ref": "zH0zx",
+              "name": "Parked item",
+              "width": "fill_container",
+              "descendants": {
+                "yXjtb": {
+                  "content": "Finish the deck"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "X7XJpM",
+          "name": "Acknowledgment (role=status)",
+          "fill": "$color/park/muted",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "That's everything for tonight. It'll be here in the morning.",
+          "lineHeight": 1.45,
+          "fontFamily": "$font/family",
+          "fontSize": 19,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "ALQkB",
+          "name": "Spacer",
+          "width": "fill_container",
+          "height": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "gKHMt",
+          "name": "Actions",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$space/actions",
+          "children": [
+            {
+              "id": "N0ymQY",
+              "type": "ref",
+              "ref": "g2Xnr4",
+              "name": "Button/Primary",
+              "width": "fill_container",
+              "fill": "$color/park/text",
+              "descendants": {
+                "R6mFVk": {
+                  "content": "Continue",
+                  "fill": "$color/park/bg"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "T3Z8H9",
+      "x": 1410,
+      "y": 440,
+      "name": "04 Breathe",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$color/breathe/bg",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        47,
+        28,
+        34,
+        28
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "SPD1z",
+          "name": "Breath",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": "$space/section",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "p6qkq",
+              "name": "Circle (scale 0.62 to 1.0)",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 1,
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#e0cdbe59",
+                    "position": 0
+                  },
+                  {
+                    "color": "#e0cdbe1a",
+                    "position": 0.7
+                  }
+                ]
+              },
+              "width": 220,
+              "height": 220,
+              "stroke": "#e0cdbe4d",
+              "strokeWidth": 1
+            },
+            {
+              "type": "text",
+              "id": "Lc8eR",
+              "name": "Phase label (aria-live=polite)",
+              "fill": "$color/breathe/text",
+              "content": "Hold",
+              "lineHeight": 1.3,
+              "fontFamily": "$font/family",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "QDyC4",
+              "name": "Dots: Breath 2 of 4",
+              "gap": 10,
+              "children": [
+                {
+                  "id": "gkVr4",
+                  "type": "ref",
+                  "ref": "B9p6q",
+                  "name": "Progress dot"
+                },
+                {
+                  "id": "a3Vy9",
+                  "type": "ref",
+                  "ref": "yEmnI",
+                  "name": "Progress dot"
+                },
+                {
+                  "id": "tN3ie",
+                  "type": "ref",
+                  "ref": "yEmnI",
+                  "name": "Progress dot"
+                },
+                {
+                  "id": "xMi3u",
+                  "type": "ref",
+                  "ref": "yEmnI",
+                  "name": "Progress dot"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZC2Bp",
+          "name": "Actions",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$space/actions",
+          "children": [
+            {
+              "id": "olIdf",
+              "type": "ref",
+              "ref": "NGSlX",
+              "name": "Button/Quiet",
+              "width": "fill_container",
+              "descendants": {
+                "lVQae": {
+                  "content": "Skip ahead",
+                  "fill": "$color/breathe/muted"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "W12EP",
+      "x": 1880,
+      "y": 440,
+      "name": "05 Fade out (start)",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$color/rest/bg",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        47,
+        28,
+        34,
+        28
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "y1HoB",
+          "name": "Goodnight",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "TLdkg",
+              "name": "Goodnight.",
+              "fill": "$color/rest/text",
+              "content": "Goodnight.",
+              "lineHeight": 1.15,
+              "fontFamily": "$font/family",
+              "fontSize": 36,
+              "fontWeight": "500",
+              "letterSpacing": -0.36
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "AhB1i",
+          "name": "Actions",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$space/actions",
+          "children": [
+            {
+              "id": "GTXOV",
+              "type": "ref",
+              "ref": "NGSlX",
+              "name": "Button/Quiet",
+              "width": "fill_container",
+              "descendants": {
+                "lVQae": {
+                  "content": "Start over",
+                  "fill": "$color/rest/muted"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lMXCr",
+      "x": 2350,
+      "y": 440,
+      "name": "06 Fade out (end of 60s dim)",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$color/rest-end/bg",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        47,
+        28,
+        34,
+        28
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "r4Wwa",
+          "name": "Goodnight",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "g6YOVv",
+              "name": "Goodnight.",
+              "fill": "$color/rest-end/text",
+              "content": "Goodnight.",
+              "lineHeight": 1.15,
+              "fontFamily": "$font/family",
+              "fontSize": 36,
+              "fontWeight": "500",
+              "letterSpacing": -0.36
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D3t2Q",
+          "name": "Actions",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$space/actions",
+          "children": [
+            {
+              "id": "QOyhb",
+              "type": "ref",
+              "ref": "NGSlX",
+              "name": "Button/Quiet",
+              "width": "fill_container",
+              "descendants": {
+                "lVQae": {
+                  "content": "Start over",
+                  "fill": "$color/rest-end/text"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "EsKUq",
+      "x": 470,
+      "y": 1900,
+      "name": "02b Brain dump (parking)",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$color/park/bg",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        47,
+        28,
+        34,
+        28
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "PPxEp",
+          "name": "Label",
+          "fill": "$color/park/text",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "What's still on your mind?",
+          "lineHeight": 1.25,
+          "fontFamily": "$font/family",
+          "fontSize": 26,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "Att0a",
+          "name": "Field (read-only)",
+          "width": "fill_container",
+          "height": 180,
+          "fill": "#190f21",
+          "cornerRadius": "$radius/field",
+          "stroke": "#ede3d873",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "K7YWZr",
+              "name": "Input",
+              "fill": "$color/park/text",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "email Sam about the offsite, dentist Thursday\nfinish the dec",
+              "lineHeight": 1.5,
+              "fontFamily": "$font/family",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "U7ioX",
+          "name": "Spacer",
+          "width": "fill_container",
+          "height": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "ZxgF8",
+          "name": "Actions",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$space/actions",
+          "children": [
+            {
+              "id": "i70AP",
+              "type": "ref",
+              "ref": "g2Xnr4",
+              "opacity": 0.45,
+              "name": "Button/Primary (disabled)",
+              "width": "fill_container",
+              "fill": "$color/park/text",
+              "descendants": {
+                "R6mFVk": {
+                  "content": "Parking…",
+                  "fill": "$color/park/bg"
+                }
+              }
+            },
+            {
+              "id": "vqyEe",
+              "type": "ref",
+              "ref": "NGSlX",
+              "name": "Button/Quiet (disabled, looks unchanged)",
+              "width": "fill_container",
+              "descendants": {
+                "lVQae": {
+                  "content": "Skip",
+                  "fill": "$color/park/muted"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "oG45Z",
+      "x": 1410,
+      "y": 1900,
+      "name": "04b Breathe (resuming after hidden)",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$color/breathe/bg",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        47,
+        28,
+        34,
+        28
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "C4K18",
+          "name": "Breath",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": "$space/section",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "EkPFH",
+              "name": "Circle slot (220, layout never shifts)",
+              "width": 220,
+              "height": 220,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "E1ZCA",
+                  "name": "Circle (settled at 0.62)",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "radial",
+                    "enabled": true,
+                    "rotation": 0,
+                    "size": {
+                      "width": 1,
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#e0cdbe59",
+                        "position": 0
+                      },
+                      {
+                        "color": "#e0cdbe1a",
+                        "position": 0.7
+                      }
+                    ]
+                  },
+                  "width": 136,
+                  "height": 136,
+                  "stroke": "#e0cdbe4d",
+                  "strokeWidth": 1
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "eGmZL",
+              "name": "Phase label (aria-live=polite)",
+              "fill": "$color/breathe/text",
+              "content": "Breathe in",
+              "lineHeight": 1.3,
+              "fontFamily": "$font/family",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "yHUM0",
+              "name": "Dots: Breath 2 of 4",
+              "gap": 10,
+              "children": [
+                {
+                  "id": "ghntx",
+                  "type": "ref",
+                  "ref": "B9p6q",
+                  "name": "Progress dot"
+                },
+                {
+                  "id": "hnOJu",
+                  "type": "ref",
+                  "ref": "yEmnI",
+                  "name": "Progress dot"
+                },
+                {
+                  "id": "C1KHe7",
+                  "type": "ref",
+                  "ref": "yEmnI",
+                  "name": "Progress dot"
+                },
+                {
+                  "id": "wEX6s",
+                  "type": "ref",
+                  "ref": "yEmnI",
+                  "name": "Progress dot"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lG4uX",
+          "name": "Actions",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$space/actions",
+          "children": [
+            {
+              "id": "dG2yD",
+              "type": "ref",
+              "ref": "NGSlX",
+              "name": "Button/Quiet",
+              "width": "fill_container",
+              "descendants": {
+                "lVQae": {
+                  "content": "Skip ahead",
+                  "fill": "$color/breathe/muted"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "NR6Jz",
+      "x": 940,
+      "y": 1900,
+      "name": "03b Support resources (crisis)",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$color/park/bg",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        47,
+        28,
+        34,
+        28
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "ccYRE",
+          "name": "Support",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": "$space/stack",
+          "children": [
+            {
+              "type": "text",
+              "id": "trKPR",
+              "name": "Heading (receives focus)",
+              "fill": "$color/park/text",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "You don't have to hold this alone tonight.",
+              "lineHeight": 1.25,
+              "fontFamily": "$font/family",
+              "fontSize": 26,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "Spypo",
+              "name": "Lede",
+              "fill": "$color/park/muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "What you wrote sounds heavy. If you're thinking about ending your life or hurting yourself, you can talk to someone right now.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font/family",
+              "fontSize": 19,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "U1iJ2",
+              "name": "Resources",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "A8Eslx",
+                  "name": "Resource",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "don0p",
+                      "name": "Name",
+                      "fill": "$color/park/text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "988 Suicide & Crisis Lifeline",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font/family",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Q5gR7",
+                      "name": "Detail",
+                      "fill": "$color/park/muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Call or text 988, any time (US).",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font/family",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zOKfu",
+                  "name": "Resource",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IxiKZ",
+                      "name": "Name",
+                      "fill": "$color/park/text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Crisis Text Line",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font/family",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ebsl5",
+                      "name": "Detail",
+                      "fill": "$color/park/muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Text HOME to 741741 (US).",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font/family",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "WORsj",
+                  "name": "Resource",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "K6U6el",
+                      "name": "Name",
+                      "fill": "$color/park/text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Outside the US",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font/family",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "nN3ut",
+                      "name": "Detail",
+                      "fill": "$color/park/muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Find a local line at findahelpline.com.",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font/family",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "E41yak",
+              "name": "Hint (full text color)",
+              "fill": "$color/park/text",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "If you're in immediate danger, call 911.",
+              "fontFamily": "$font/family",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "s5WRvg",
+              "name": "Spacer",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "x0nb6",
+              "name": "Actions",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space/actions",
+              "children": [
+                {
+                  "id": "vmUhc",
+                  "type": "ref",
+                  "ref": "g2Xnr4",
+                  "name": "Call 988 (tel:988)",
+                  "width": "fill_container",
+                  "descendants": {
+                    "R6mFVk": {
+                      "content": "Call 988"
+                    }
+                  }
+                },
+                {
+                  "id": "NLNKt",
+                  "type": "ref",
+                  "ref": "NGSlX",
+                  "name": "Text 988",
+                  "width": "fill_container",
+                  "descendants": {
+                    "lVQae": {
+                      "content": "Text 988"
+                    }
+                  }
+                },
+                {
+                  "id": "hOyl5",
+                  "type": "ref",
+                  "ref": "NGSlX",
+                  "name": "Go back to what I wrote",
+                  "width": "fill_container",
+                  "descendants": {
+                    "lVQae": {
+                      "content": "Go back to what I wrote"
+                    }
+                  }
+                },
+                {
+                  "id": "lGwUl",
+                  "type": "ref",
+                  "ref": "NGSlX",
+                  "name": "Continue to breathing",
+                  "width": "fill_container",
+                  "descendants": {
+                    "lVQae": {
+                      "content": "Continue to breathing"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "dIA4t",
+      "x": 0,
+      "y": 1324,
+      "name": "Spec: 01 Arrive",
+      "width": 390,
+      "fill": "#f3f0f5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 20,
+      "children": [
+        {
+          "type": "frame",
+          "id": "PtPu8",
+          "name": "Header",
+          "width": "fill_container",
+          "gap": 16,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "E8QKuD",
+              "name": "Title",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "01 Arrive",
+              "fontFamily": "$font/family",
+              "fontSize": 17,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "nZbyj",
+              "name": "Easing",
+              "fill": "#6b6078",
+              "content": "(0.2, 0, 0, 1)",
+              "fontFamily": "$font/family",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "R5kmR",
+          "name": "Tempo",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "uJtIg",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Tempo",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "q1CAnA",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "1.0x. Micro 160, standard 400, screen 700ms.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "V51so",
+          "name": "Enter",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "t0kaV6",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Enter",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "eiByA",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Fade in with a 16px rise, 700ms.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tgY7C",
+          "name": "Exit",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "X3iV3",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Exit",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "xrU69",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Opacity only, 400ms.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VAxeU",
+          "name": "Ambient",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "te7Nx",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Ambient",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "UhgKf",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The dusk gradient drifts vertically on a 40s ease-in-out loop. Static under reduced motion.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "w1kGvT",
+          "name": "Press",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "nKCd6",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Press",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "yMNnV",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Begin scales to 0.97 over 160ms. No overshoot. Dropped under reduced motion.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FfMnN",
+          "name": "Contrast",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "rYWAs",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Contrast",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "QDNHs",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Text 12.35 / 9.99 / 5.52:1 (top, middle, horizon). Muted is 3.55:1 on the horizon band, so no muted text in the bottom third.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "fi8pc",
+      "x": 470,
+      "y": 1324,
+      "name": "Spec: 02 Brain dump",
+      "width": 390,
+      "fill": "#f3f0f5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 20,
+      "children": [
+        {
+          "type": "frame",
+          "id": "IyzIl",
+          "name": "Header",
+          "width": "fill_container",
+          "gap": 16,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "VMwsX",
+              "name": "Title",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "02 Brain dump",
+              "fontFamily": "$font/family",
+              "fontSize": 17,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "EhmiW",
+              "name": "Easing",
+              "fill": "#6b6078",
+              "content": "(0.3, 0, 0.1, 1)",
+              "fontFamily": "$font/family",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "P5DWW",
+          "name": "Tempo",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "r2sus3",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Tempo",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "K6VYxz",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "1.35x. Micro 220, standard 540, screen 950ms.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "UZWcB",
+          "name": "Enter",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "SEkuf",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Enter",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "P85zaC",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Fade in with a 12px rise, 950ms. The dusk layer fades out on the same clock.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "syQC0",
+          "name": "Exit",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "h8gepl",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Exit",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "i3Dmc",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Opacity only, 540ms.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "J8aGx",
+          "name": "Behavior",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "gCLhZ",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Behavior",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "qE2d2",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Park it is disabled until there is text. Skip goes straight to Breathe. 2,000 characters max.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IZzFo",
+          "name": "Contrast",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "Sasuz",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Contrast",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "eLFdL",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Text 13.12:1, muted 7.72:1.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "RUQpO",
+      "x": 940,
+      "y": 1324,
+      "name": "Spec: 03 Parked for tomorrow",
+      "width": 390,
+      "fill": "#f3f0f5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 20,
+      "children": [
+        {
+          "type": "frame",
+          "id": "kHeRn",
+          "name": "Header",
+          "width": "fill_container",
+          "gap": 16,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "G5UZ9H",
+              "name": "Title",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "03 Parked for tomorrow",
+              "fontFamily": "$font/family",
+              "fontSize": 17,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "v9HTV",
+              "name": "Easing",
+              "fill": "#6b6078",
+              "content": "(0.3, 0, 0.1, 1)",
+              "fontFamily": "$font/family",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "skgEe",
+          "name": "Transition",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "U8Igl8",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Transition",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "DWz2G",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The form fades out over 540ms, then the list enters with a 12px rise over 950ms.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "I8sI0X",
+          "name": "Guardrails",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "NHbia",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Guardrails",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "yYixW",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Every item must trace back to the person's own words. One corrective retry, then a plain split of their text. Up to 10 items.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "O1IDT",
+          "name": "Copy",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "AEck4",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Copy",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "oKjdu",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The acknowledgment is one sentence with no advice, no questions and no clinical words, or it's replaced with a fixed line.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Fe9D8",
+          "name": "A11y",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "Z07fz",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "A11y",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "XZ1tH",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The acknowledgment is announced through role=\"status\".",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "qQpjH",
+      "x": 1410,
+      "y": 1324,
+      "name": "Spec: 04 Breathe",
+      "width": 390,
+      "fill": "#f3f0f5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 20,
+      "children": [
+        {
+          "type": "frame",
+          "id": "qvw3a",
+          "name": "Header",
+          "width": "fill_container",
+          "gap": 16,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "SlbRq",
+              "name": "Title",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "04 Breathe",
+              "fontFamily": "$font/family",
+              "fontSize": 17,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "S84rIa",
+              "name": "Easing",
+              "fill": "#6b6078",
+              "content": "(0.37, 0, 0.63, 1)",
+              "fontFamily": "$font/family",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VqgYw",
+          "name": "Tempo",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "cSHtz",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Tempo",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "da99O",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "1.8x. Micro 290, standard 720, screen 1260ms. Enter: 6px rise on (0.4, 0, 0.2, 1).",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T2wCm",
+          "name": "Breath",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "k2SVG",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Breath",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "sYfhr",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "4s in, 7s hold, 8s out. 4 cycles, 76s. The circle scales 0.62 to 1.0 on sine in-out.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Ra2oK",
+          "name": "Hold",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "Lr3Ah",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Hold",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "gnvWy",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Nothing moves. Seven seconds of stillness is the point of that phase.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mgFff",
+          "name": "Label",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "yvOnW",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Label",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "fQFNI",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Crossfades over 600ms, centered on the phase boundary. aria-live=\"polite\". Dots read \"Breath 2 of 4\".",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wJu3k",
+          "name": "Reduced motion",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "uT4Ig",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Reduced motion",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "C6TY3",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The circle keeps a fixed size. Fill opacity pulses 0.35 to 1.0 on the same timings.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "x25IcZ",
+          "name": "Contrast",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "BWr0S",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Contrast",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "BlW5r",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Text 12.30:1, muted 7.02:1.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nPi6Q",
+      "x": 1880,
+      "y": 1324,
+      "name": "Spec: 05 Fade out (start)",
+      "width": 390,
+      "fill": "#f3f0f5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 20,
+      "children": [
+        {
+          "type": "frame",
+          "id": "sthKD",
+          "name": "Header",
+          "width": "fill_container",
+          "gap": 16,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "uI8kU",
+              "name": "Title",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "05 Fade out (start)",
+              "fontFamily": "$font/family",
+              "fontSize": 17,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "pPbbe",
+              "name": "Easing",
+              "fill": "#6b6078",
+              "content": "(0.45, 0, 0.55, 1)",
+              "fontFamily": "$font/family",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ggeng",
+          "name": "Tempo",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "pEzfM",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Tempo",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "XXMBj",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "2.4x. Micro 380, standard 960, screen 1680ms.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DbpQt",
+          "name": "Enter",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "saxlx",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Enter",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "yEv38",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Opacity only, no travel, 1680ms.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xagNb",
+          "name": "Hold",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "FcuV7",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Hold",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Qjo6F",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "\"Goodnight.\" holds at the Breathe colors for 3s, then the dim starts.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "j4z5Kp",
+          "name": "Start over",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "Bjc3i",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Start over",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Qlhjl",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Present from the start so keyboard and VoiceOver users can always reach it.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "x6vZs",
+      "x": 2350,
+      "y": 1324,
+      "name": "Spec: 06 Fade out (end of 60s dim)",
+      "width": 390,
+      "fill": "#f3f0f5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 20,
+      "children": [
+        {
+          "type": "frame",
+          "id": "kTIWt",
+          "name": "Header",
+          "width": "fill_container",
+          "gap": 16,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "uWEZW",
+              "name": "Title",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "06 Fade out (end of 60s dim)",
+              "fontFamily": "$font/family",
+              "fontSize": 17,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Tbmx0",
+              "name": "Easing",
+              "fill": "#6b6078",
+              "content": "(0.4, 0, 0.6, 1)",
+              "fontFamily": "$font/family",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gcaV2",
+          "name": "Dim",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "oA7gP",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Dim",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "a7wONZ",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Background and text dim together over 60s. Interpolated in Oklab so there's no flicker-then-stall.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "UFd1L",
+          "name": "Warmth",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "GYolJ",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Warmth",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "e1TtiI",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Hue moves from plum (340) through red to amber (45) while chroma drops. No blue left at the end.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lPdr0",
+          "name": "Contrast",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "Hp7ny",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Contrast",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "IRXbZ",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "12.30:1 at the start, 4.68:1 at the end, never below 4.5:1.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "l0UP5q",
+          "name": "Limit",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "b7yaYQ",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Limit",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "JeAeP",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "A web page can't control the backlight, so the last frame is only as dark as the phone's brightness setting.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yfcSf",
+          "name": "Reduced motion",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "IY3ON",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Reduced motion",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "b9Q7w",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The dim still runs. It changes light, not position.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "b3vi1A",
+      "x": 470,
+      "y": 2784,
+      "name": "Spec: 02b Brain dump (parking)",
+      "width": 390,
+      "fill": "#f3f0f5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 20,
+      "children": [
+        {
+          "type": "frame",
+          "id": "ecK51",
+          "name": "Header",
+          "width": "fill_container",
+          "gap": 16,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "gCzUJ",
+              "name": "Title",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "02b Brain dump (parking)",
+              "fontFamily": "$font/family",
+              "fontSize": 17,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "pzCsR",
+              "name": "Easing",
+              "fill": "#6b6078",
+              "content": "(0.3, 0, 0.1, 1)",
+              "fontFamily": "$font/family",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZzCOI",
+          "name": "Trigger",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "C7S15",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Trigger",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "TTd4b",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Park it is tapped. The form stays put, and nothing slides while the person waits.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GuL02",
+          "name": "State",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "UnAVX",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "State",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "X5qHju",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The button reads \"Parking…\" at 45% opacity, the field is read-only and the form is aria-busy. Usually 3 to 5s.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Bwc8i",
+          "name": "Fallback",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "ycAY0",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Fallback",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "yUqZ8",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "After 20s, or with no connection, the phone splits the text itself and shows the list anyway.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "aKjyf",
+          "name": "Exit",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "LcHX4",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Exit",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "QGtKB",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Opacity only, 540ms. Then the parked list or the support screen enters.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZaENl",
+          "name": "Gap",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "OaGHC",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Gap",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "nQQIl",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Skip is disabled too, but looks unchanged. Only the primary button has a disabled style.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "YNhEr",
+      "x": 940,
+      "y": 2784,
+      "name": "Spec: 03b Support resources (crisis)",
+      "width": 390,
+      "fill": "#f3f0f5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 20,
+      "children": [
+        {
+          "type": "frame",
+          "id": "wNoqJ",
+          "name": "Header",
+          "width": "fill_container",
+          "gap": 16,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Ug3se",
+              "name": "Title",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "03b Support resources (crisis)",
+              "fontFamily": "$font/family",
+              "fontSize": 17,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "hsDdr",
+              "name": "Easing",
+              "fill": "#6b6078",
+              "content": "(0.3, 0, 0.1, 1)",
+              "fontFamily": "$font/family",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JH6Ur",
+          "name": "Trigger",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "kuk20",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Trigger",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "kvjYk",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Crisis language, checked on the phone before anything is sent and again on the server, or Claude's concern flag.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "I6O7i",
+          "name": "Enter",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "pIg19",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Enter",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Iadx4",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Same as the parked list: 12px rise, 950ms. Nothing else moves.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "H5Elg",
+          "name": "Content",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "K5dzV",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Content",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "DxY8B",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Fixed copy, no AI text and no advice. Resources are US-centric, plus findahelpline.com.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sy4sS",
+          "name": "Actions",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "WYU3k",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Actions",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "X71DS1",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Call and Text open Phone and Messages. Go back restores their text. Continuing to breathing is still allowed.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rTFW5",
+          "name": "A11y",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "t8lmdG",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "A11y",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "YguNC",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Focus moves to the heading on arrival, so VoiceOver reads it first.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "o7ueMK",
+          "name": "Small phones",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "ajg1Y",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Small phones",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "l2v0j",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Scrolls on an iPhone SE, where it's taller than the screen.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "g6lhl",
+      "x": 1410,
+      "y": 2784,
+      "name": "Spec: 04b Breathe (resuming)",
+      "width": 390,
+      "fill": "#f3f0f5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 20,
+      "children": [
+        {
+          "type": "frame",
+          "id": "fIsm0",
+          "name": "Header",
+          "width": "fill_container",
+          "gap": 16,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "JOEnh",
+              "name": "Title",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "04b Breathe (resuming)",
+              "fontFamily": "$font/family",
+              "fontSize": 17,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "LAqhP",
+              "name": "Easing",
+              "fill": "#6b6078",
+              "content": "(0.37, 0, 0.63, 1)",
+              "fontFamily": "$font/family",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wWbT9",
+          "name": "Trigger",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "QYAdg",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Trigger",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "svMwT",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The page is hidden mid-breath: the phone locks or the person switches apps.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZW0D6",
+          "name": "Why",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "otWQ4",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Why",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "d532ox",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Browsers stop animation frames on hidden pages but keep firing timers, so the circle would come back out of step with its label.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "N9h4wy",
+          "name": "Pause",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "cZ3aE",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Pause",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "vuZV4",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "While hidden, the circle settles at 0.62 and the label resets to \"Breathe in\".",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CN3GD",
+          "name": "Resume",
+          "width": "fill_container",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "a7mL2S",
+              "name": "Label",
+              "fill": "#6b6078",
+              "textGrowth": "fixed-width",
+              "width": 84,
+              "content": "Resume",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "iwkt9",
+              "name": "Value",
+              "fill": "#2b284f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The unfinished breath starts over 720ms after the page is visible again. Completed breaths stay counted.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font/family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "color/arrive/bg": {
+      "type": "color",
+      "value": "#2b284f"
+    },
+    "color/arrive/text": {
+      "type": "color",
+      "value": "#f6f1e9"
+    },
+    "color/arrive/muted": {
+      "type": "color",
+      "value": "#cec2b3"
+    },
+    "color/park/bg": {
+      "type": "color",
+      "value": "#241930"
+    },
+    "color/park/text": {
+      "type": "color",
+      "value": "#ede3d8"
+    },
+    "color/park/muted": {
+      "type": "color",
+      "value": "#bdaea1"
+    },
+    "color/breathe/bg": {
+      "type": "color",
+      "value": "#1a0c16"
+    },
+    "color/breathe/text": {
+      "type": "color",
+      "value": "#e0cdbe"
+    },
+    "color/breathe/muted": {
+      "type": "color",
+      "value": "#b0998a"
+    },
+    "color/rest/bg": {
+      "type": "color",
+      "value": "#1a0c16"
+    },
+    "color/rest/text": {
+      "type": "color",
+      "value": "#e0cdbe"
+    },
+    "color/rest/muted": {
+      "type": "color",
+      "value": "#b0998a"
+    },
+    "color/rest-end/bg": {
+      "type": "color",
+      "value": "#0a0403"
+    },
+    "color/rest-end/text": {
+      "type": "color",
+      "value": "#907461"
+    },
+    "color/dusk/top": {
+      "type": "color",
+      "value": "#2b284f"
+    },
+    "color/dusk/mid": {
+      "type": "color",
+      "value": "#4d3054"
+    },
+    "color/dusk/horizon": {
+      "type": "color",
+      "value": "#8a533f"
+    },
+    "motion/arrive/tempo": {
+      "type": "number",
+      "value": 1
+    },
+    "motion/arrive/micro": {
+      "type": "number",
+      "value": 160
+    },
+    "motion/arrive/standard": {
+      "type": "number",
+      "value": 400
+    },
+    "motion/arrive/screen": {
+      "type": "number",
+      "value": 700
+    },
+    "motion/arrive/travel": {
+      "type": "number",
+      "value": 16
+    },
+    "motion/arrive/ease": {
+      "type": "string",
+      "value": "cubic-bezier(0.2, 0, 0, 1)"
+    },
+    "motion/park/tempo": {
+      "type": "number",
+      "value": 1.35
+    },
+    "motion/park/micro": {
+      "type": "number",
+      "value": 220
+    },
+    "motion/park/standard": {
+      "type": "number",
+      "value": 540
+    },
+    "motion/park/screen": {
+      "type": "number",
+      "value": 950
+    },
+    "motion/park/travel": {
+      "type": "number",
+      "value": 12
+    },
+    "motion/park/ease": {
+      "type": "string",
+      "value": "cubic-bezier(0.3, 0, 0.1, 1)"
+    },
+    "motion/breathe/tempo": {
+      "type": "number",
+      "value": 1.8
+    },
+    "motion/breathe/micro": {
+      "type": "number",
+      "value": 290
+    },
+    "motion/breathe/standard": {
+      "type": "number",
+      "value": 720
+    },
+    "motion/breathe/screen": {
+      "type": "number",
+      "value": 1260
+    },
+    "motion/breathe/travel": {
+      "type": "number",
+      "value": 6
+    },
+    "motion/breathe/ease": {
+      "type": "string",
+      "value": "cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    "motion/rest/tempo": {
+      "type": "number",
+      "value": 2.4
+    },
+    "motion/rest/micro": {
+      "type": "number",
+      "value": 380
+    },
+    "motion/rest/standard": {
+      "type": "number",
+      "value": 960
+    },
+    "motion/rest/screen": {
+      "type": "number",
+      "value": 1680
+    },
+    "motion/rest/travel": {
+      "type": "number",
+      "value": 0
+    },
+    "motion/rest/ease": {
+      "type": "string",
+      "value": "cubic-bezier(0.45, 0, 0.55, 1)"
+    },
+    "motion/breath/inhale": {
+      "type": "number",
+      "value": 4000
+    },
+    "motion/breath/hold": {
+      "type": "number",
+      "value": 7000
+    },
+    "motion/breath/exhale": {
+      "type": "number",
+      "value": 8000
+    },
+    "motion/breath/cycles": {
+      "type": "number",
+      "value": 4
+    },
+    "motion/breath/scale-min": {
+      "type": "number",
+      "value": 0.62
+    },
+    "motion/breath/opacity-min": {
+      "type": "number",
+      "value": 0.35
+    },
+    "motion/breath/label-crossfade": {
+      "type": "number",
+      "value": 600
+    },
+    "motion/breath/resume-delay": {
+      "type": "number",
+      "value": 720
+    },
+    "motion/breath/ease": {
+      "type": "string",
+      "value": "cubic-bezier(0.37, 0, 0.63, 1)"
+    },
+    "motion/rest-dim/hold": {
+      "type": "number",
+      "value": 3000
+    },
+    "motion/rest-dim/duration": {
+      "type": "number",
+      "value": 60000
+    },
+    "motion/rest-dim/ease": {
+      "type": "string",
+      "value": "cubic-bezier(0.4, 0, 0.6, 1)"
+    },
+    "motion/dusk/drift": {
+      "type": "number",
+      "value": 40000
+    },
+    "space/gutter": {
+      "type": "number",
+      "value": 28
+    },
+    "space/stack": {
+      "type": "number",
+      "value": 16
+    },
+    "space/section": {
+      "type": "number",
+      "value": 24
+    },
+    "space/actions": {
+      "type": "number",
+      "value": 12
+    },
+    "radius/field": {
+      "type": "number",
+      "value": 20
+    },
+    "radius/pill": {
+      "type": "number",
+      "value": 999
+    },
+    "font/family": {
+      "type": "string",
+      "value": "Nunito"
+    }
+  },
+  "fileToken": "45f78b24-4bce-4e1c-8ae9-73a34391961b"
+}
