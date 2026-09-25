@@ -1,0 +1,159 @@
+/* Registered so the stage colors can transition (unregistered custom properties snap). */
+@property --bg { syntax: '<color>'; inherits: true; initial-value: #2b284f; }
+@property --text { syntax: '<color>'; inherits: true; initial-value: #f6f1e9; }
+@property --muted { syntax: '<color>'; inherits: true; initial-value: #cec2b3; }
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html,
+body,
+#root { height: 100%; margin: 0; }
+
+body {
+  background: #0d0b10;
+  font-family: 'Nunito Variable', ui-rounded, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Phone: full-bleed. */
+.desk { height: 100%; }
+.frame { position: relative; height: 100dvh; overflow: hidden; }
+
+/* Desktop: device-sized frame so proportions match a phone. */
+@media (min-width: 600px) and (pointer: fine) {
+  .desk {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 32px;
+  }
+  .frame {
+    width: 390px;
+    height: min(844px, calc(100vh - 64px));
+    border-radius: 48px;
+    box-shadow: 0 0 0 10px #1c1a20, 0 0 0 11px #2c2a31, 0 30px 80px rgb(0 0 0 / 0.5);
+  }
+}
+
+.screen {
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.dusk {
+  position: absolute;
+  inset: 0;
+  background-size: 100% 160%;
+  background-position: 50% 0%;
+  animation: drift ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  to { background-position: 50% 100%; }
+}
+
+.stage {
+  position: relative;
+  height: 100%;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: max(24px, env(safe-area-inset-top)) 28px max(28px, env(safe-area-inset-bottom));
+  gap: 24px;
+  /* The support screen can be taller than a small phone (iPhone SE); let it scroll. */
+  overflow-y: auto;
+}
+
+.stack { display: flex; flex-direction: column; gap: 16px; }
+.grow { flex: 1; }
+.center { align-items: center; justify-content: center; text-align: center; }
+.layout > .stack:not(.grow) { margin-top: 18vh; }
+
+.eyebrow { margin: 0; font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.display { margin: 0; font-size: 36px; line-height: 1.15; font-weight: 500; letter-spacing: -0.01em; }
+.title { margin: 0; font-size: 26px; line-height: 1.25; font-weight: 500; }
+.lede { margin: 0; font-size: 19px; line-height: 1.45; color: var(--muted); }
+/* Full text color, not muted: this line sits over the horizon band. */
+.hint { margin: 0; font-size: 15px; text-align: center; color: var(--text); }
+/* Reserves the label's line so the dots don't jump while the label crossfades. */
+.phase-slot { min-height: 26px; }
+.phase { margin: 0; font-size: 20px; line-height: 26px; color: var(--text); }
+
+.actions { display: flex; flex-direction: column; gap: 12px; margin-top: auto; }
+
+.btn {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  min-height: 52px;
+  padding: 0 24px;
+  font: inherit;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn.primary { background: var(--text); color: var(--bg); }
+.btn.primary:disabled { opacity: 0.45; cursor: default; }
+.btn.quiet { background: transparent; color: var(--muted); font-weight: 500; min-height: 44px; }
+
+:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+
+.field {
+  width: 100%;
+  min-height: 180px;
+  padding: 16px;
+  border: 1px solid color-mix(in oklab, var(--text) 45%, transparent);
+  border-radius: 20px;
+  background: color-mix(in oklab, var(--bg) 70%, black);
+  color: var(--text);
+  font: inherit;
+  font-size: 17px;
+  line-height: 1.5;
+  resize: none;
+}
+.field::placeholder { color: var(--muted); }
+
+.parked { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; font-size: 18px; }
+.parked li { display: flex; gap: 12px; align-items: baseline; }
+.parked li::before {
+  content: '';
+  flex: none;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid var(--muted);
+  border-radius: 4px;
+  transform: translateY(2px);
+}
+
+.breath {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in oklab, var(--text) 35%, transparent), color-mix(in oklab, var(--text) 10%, transparent) 70%);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--text) 30%, transparent);
+}
+
+.dots { display: flex; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.dots li { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid var(--muted); background: transparent; }
+.dots li[data-done='true'] { background: var(--muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  .dusk { animation: none; }
+}
+
+/* Anchors styled as buttons (Call 988, Text 988). */
+a.btn { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+
+.resources { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+.resources li { display: grid; gap: 2px; font-size: 17px; line-height: 1.4; }
+.resources span { color: var(--muted); }
+.resources a { color: var(--text); }
+.hint-left { margin: 0; font-size: 15px; color: var(--text); }

@@ -1,0 +1,8 @@
+# Secrets stay local; Vercel gets them from project environment variables.
+.env
+.env.*
+!.env.example
+node_modules
+dist
+.claude
+.DS_Store

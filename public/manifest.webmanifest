@@ -1,0 +1,11 @@
+{
+  "name": "Set Down",
+  "short_name": "Set Down",
+  "description": "A short evening routine for setting the day down before sleep.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#2b284f",
+  "theme_color": "#2b284f",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

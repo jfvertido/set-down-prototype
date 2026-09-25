@@ -1,0 +1,14 @@
+node_modules
+dist
+.vercel
+.env*
+!.env.example
+.DS_Store
+*.tsbuildinfo
+
+# Private planning notes for the job application; kept local, not published.
+handoff-brief.md
+calm-wind-down-prototype-brainstorm.md
+
+# Local tooling config.
+.claude
