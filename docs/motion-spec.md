@@ -1,6 +1,6 @@
 # Set Down motion spec
 
-Draft 1, 2026-09-24. The numbers here are mirrored in `src/design/tokens.ts`; change both together. The screens and per-screen spec notes are in Figma: https://www.figma.com/design/LW6t6B0wYDiSXYYv2KCS4S
+Draft 1, 2026-09-24. The numbers here are mirrored in `src/design/tokens.ts`; change both together. The screens, including the parking, crisis support and resuming states, and a spec card for each are in [design/set-down.pen](../design/set-down.pen). An earlier version is in [Figma](https://www.figma.com/design/LW6t6B0wYDiSXYYv2KCS4S).
 
 ## The idea
 
@@ -105,4 +105,4 @@ Haptics are out, because the Vibration API isn't available in iOS Safari and fak
 
 - Four breathing cycles (76s) is the common starting recommendation for 4-7-8. Is that the right length for a first-time user, or should there be a three-cycle option?
 - Should "Start over" on the last screen appear only after the dim finishes? It's present from the start right now, so keyboard and VoiceOver users can always reach it.
-- The typeface is Nunito, self-hosted, in both the app and Figma. It was picked because the system rounded face only exists on Apple devices and doesn't render in Figma. A licensed display face would add more brand character, but it would cost load time on the first screen.
+- The typeface is Nunito, self-hosted, in the app and both design files. It was picked because the system rounded face only exists on Apple devices and doesn't render in Figma. A licensed display face would add more brand character, but it would cost load time on the first screen.
