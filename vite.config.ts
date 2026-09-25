@@ -1,3 +1,5 @@
+import { createHash } from 'node:crypto'
+import { readFileSync, readdirSync } from 'node:fs'
 import { defineConfig, loadEnv, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -34,10 +36,46 @@ function devApi(env: Record<string, string>): Plugin {
   }
 }
 
+// Production only:
+// - writes sw.js with this build's exact file list, so the app works offline after one visit
+// - preloads the Latin Nunito file, so the first screen doesn't flash the fallback font
+function offline(): Plugin {
+  const publicFiles = () => readdirSync('public').filter((f) => !f.startsWith('.'))
+
+  return {
+    name: 'set-down-offline',
+    apply: 'build',
+    transformIndexHtml: {
+      order: 'post',
+      handler(_html, ctx) {
+        const font = Object.keys(ctx.bundle ?? {}).find((f) => /nunito-latin-wght-normal.*\.woff2$/.test(f))
+        if (!font) return
+        return [
+          {
+            tag: 'link',
+            attrs: { rel: 'preload', href: `/${font}`, as: 'font', type: 'font/woff2', crossorigin: '' },
+            injectTo: 'head',
+          },
+        ]
+      },
+    },
+    generateBundle(_options, bundle) {
+      const built = Object.keys(bundle).filter((f) => f !== 'index.html' && !f.endsWith('.map'))
+      const files = [...built, ...publicFiles()].map((f) => `/${f}`).sort()
+      const version = createHash('sha256').update(files.join('\n')).digest('hex').slice(0, 12)
+      const source = readFileSync('sw/sw.template.js', 'utf8')
+        .replace("const VERSION = '__VERSION__'", `const VERSION = '${version}'`)
+        .replace('const PRECACHE = __PRECACHE__', `const PRECACHE = ${JSON.stringify(files)}`)
+      if (source.includes('__VERSION__') || source.includes('__PRECACHE__')) this.error('sw.js placeholders were not filled in')
+      this.emitFile({ type: 'asset', fileName: 'sw.js', source })
+    },
+  }
+}
+
 export default defineConfig(({ mode }) => {
   // The '' prefix loads every variable, not just VITE_ ones. Only the server plugin reads it.
   const env = loadEnv(mode, process.cwd(), '')
   return {
-    plugins: [react(), devApi(env)],
+    plugins: [react(), devApi(env), offline()],
   }
 })

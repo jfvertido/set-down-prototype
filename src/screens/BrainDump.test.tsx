@@ -41,6 +41,14 @@ describe('BrainDump', () => {
     expect(screen.getByText('Dentist thursday')).toBeTruthy()
   })
 
+  it('parks locally when the phone is offline', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => Promise.reject(new TypeError('Failed to fetch'))))
+    renderDump()
+    write('laundry\ncall the bank')
+    expect(await screen.findByText('Laundry')).toBeTruthy()
+    expect(screen.getByText('Call the bank')).toBeTruthy()
+  })
+
   it('shows support resources for crisis language without calling the API', async () => {
     const fetchSpy = vi.fn()
     vi.stubGlobal('fetch', fetchSpy)

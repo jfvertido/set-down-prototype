@@ -41,6 +41,8 @@ export function App() {
       <PhoneFrame>
         <div
           className="screen"
+          // CSS animations (the dusk drift) can't read MotionConfig, so the dev override is mirrored here.
+          data-reduce-motion={reducedMotion === 'always' ? '' : undefined}
           style={{
             ['--bg' as string]: bg,
             ['--text' as string]: text,

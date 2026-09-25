@@ -50,14 +50,18 @@ The guardrails, in order (code in [server/park.ts](server/park.ts) and [src/lib/
 
 Nothing people write is logged or cached.
 
+## Offline
+
+After one visit, the whole routine works without a connection. The production build writes a service worker ([sw/sw.template.js](sw/sw.template.js)) with that build's exact file list, and the crisis check and local parking already run on the phone. `/api/park` is never cached. The service worker only registers in production builds, so `npm run dev` always shows your latest edits.
+
 ## Status
 
 | Phase | State |
 |---|---|
 | 1. Spec and scaffold | Done: motion spec, tokens, stage transitions, 60s dim, walkable flow, Figma frames |
 | 2. Shell | Done: 4-7-8 breathing loop, reduced-motion pulse, press feedback, pause while hidden |
-| 3. AI | Done: Claude endpoint, traceability check with one retry and a local fallback, crisis routing. Needs a live test with an API key |
-| 4. Polish | Not started |
+| 3. AI | Done: Claude endpoint, traceability check with one retry and a local fallback, crisis routing. Tested live in production |
+| 4. Polish | In progress: reduced motion, offline support, VoiceOver and on-phone passes |
 | 5. Proof | Not started |
 
 ## Stack

@@ -148,6 +148,7 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .dusk { animation: none; }
 }
+.screen[data-reduce-motion] .dusk { animation: none; }
 
 /* Anchors styled as buttons (Call 988, Text 988). */
 a.btn { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
