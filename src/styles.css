@@ -105,6 +105,18 @@ body {
 .btn.quiet { background: transparent; color: var(--muted); font-weight: 500; min-height: 44px; }
 
 :focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+/* Headings take focus when a screen appears (src/lib/focus.ts). They aren't controls, so no ring. */
+h1[tabindex='-1']:focus { outline: none; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 
 .field {
   width: 100%;
@@ -141,9 +153,9 @@ body {
   box-shadow: 0 0 0 1px color-mix(in oklab, var(--text) 30%, transparent);
 }
 
-.dots { display: flex; gap: 10px; margin: 0; padding: 0; list-style: none; }
-.dots li { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid var(--muted); background: transparent; }
-.dots li[data-done='true'] { background: var(--muted); }
+.dots { display: flex; gap: 10px; }
+.dots span { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid var(--muted); background: transparent; }
+.dots span[data-done='true'] { background: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) {
   .dusk { animation: none; }

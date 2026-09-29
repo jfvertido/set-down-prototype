@@ -33,6 +33,14 @@ describe('BrainDump', () => {
     expect(screen.getByRole('status').textContent).toBe("That's parked for tonight.")
   })
 
+  it('moves focus to the parked list heading so VoiceOver starts there', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => new Response('{}', { status: 503 })))
+    renderDump()
+    write('laundry')
+    const heading = await screen.findByRole('heading', { name: 'Parked for tomorrow' })
+    await waitFor(() => expect(document.activeElement).toBe(heading))
+  })
+
   it('parks locally when the API is unavailable', async () => {
     vi.stubGlobal('fetch', vi.fn(async () => new Response('{}', { status: 503 })))
     renderDump()

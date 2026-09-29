@@ -64,10 +64,10 @@ Triple-click the side button to turn it on. Swipe right to move to the next item
 
 ### Brain dump
 
-- [ ] After Begin, the heading of the new screen is read without you hunting for it. If VoiceOver stays on the old spot or jumps to the top of the page, note it.
+- [ ] After Begin, VoiceOver lands on "What's still on your mind?" and reads it as a heading. The same should happen on every screen change: you never have to hunt for where you are.
 - [ ] The field is read as "What's still on your mind?", text field.
 - [ ] While parking, VoiceOver says the field is busy, or something that tells you to wait.
-- [ ] When the list arrives, the acknowledgment line is read out without you moving to it.
+- [ ] When the list arrives, VoiceOver lands on "Parked for tomorrow". Swiping right reads the items, then the acknowledgment line.
 - [ ] Each item in the list is read in order, and the list is announced as a list.
 
 ### Crisis routing
@@ -79,7 +79,8 @@ Triple-click the side button to turn it on. Swipe right to move to the next item
 ### Breathing
 
 - [ ] "Breathe in", "Hold" and "Breathe out" are read out as they change. Do they help, or talk over the breathing? This one is a judgment call. Write down what you think.
-- [ ] The dots are read as "Breath 1 of 4", and the number goes up.
+- [ ] On arrival, VoiceOver reads the heading "Breathe", which isn't shown on screen.
+- [ ] The dots are read once, as "Breath 1 of 4", not as four separate items. The number goes up.
 - [ ] The circle itself is skipped.
 - [ ] "Skip ahead" is reachable and works.
 

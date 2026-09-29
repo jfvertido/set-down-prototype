@@ -2,6 +2,7 @@ import { useId, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { PressButton } from '../components/PressButton'
 import { SupportResources } from '../components/SupportResources'
+import { focusOnMount, focusScreen } from '../lib/focus'
 import { requestPark } from '../lib/park'
 import { maxInputChars, type ParkResponse } from '../lib/parkTypes'
 import { stages } from '../design/tokens'
@@ -43,9 +44,9 @@ export function BrainDump({ onDone }: { onDone: () => void }) {
               if (!parking) submit()
             }}
           >
-            <label htmlFor={fieldId} className="title">
-              What's still on your mind?
-            </label>
+            <h1 className="title" tabIndex={-1} ref={focusScreen}>
+              <label htmlFor={fieldId}>What's still on your mind?</label>
+            </h1>
             <textarea
               id={fieldId}
               className="field"
@@ -69,7 +70,7 @@ export function BrainDump({ onDone }: { onDone: () => void }) {
 
         {result?.kind === 'parked' && (
           <motion.section key="parked" className="stack grow" aria-labelledby="parked-title" {...enter}>
-            <h1 id="parked-title" className="title">
+            <h1 id="parked-title" className="title" tabIndex={-1} ref={focusOnMount}>
               Parked for tomorrow
             </h1>
             {result.items.length > 0 && (

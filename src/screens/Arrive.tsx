@@ -1,4 +1,5 @@
 import { PressButton } from '../components/PressButton'
+import { focusScreen } from '../lib/focus'
 
 function greetingFor(hour: number) {
   if (hour >= 5 && hour < 17) return 'Hi there.'
@@ -17,7 +18,7 @@ export function Arrive({ onBegin }: { onBegin: () => void }) {
       </p>
       {/* Copy sits in the top two-thirds: muted text fails AA over the horizon band. */}
       <div className="stack">
-        <h1 className="display">{greetingFor(now.getHours())}</h1>
+        <h1 className="display" tabIndex={-1} ref={focusScreen}>{greetingFor(now.getHours())}</h1>
         <p className="lede">Ready to wind down?</p>
       </div>
       <div className="actions">

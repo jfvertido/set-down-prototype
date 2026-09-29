@@ -1,6 +1,7 @@
 import { AnimatePresence, motion, useReducedMotionConfig } from 'motion/react'
 import { PressButton } from '../components/PressButton'
 import { breath, cssEase, stages } from '../design/tokens'
+import { focusScreen } from '../lib/focus'
 import { phaseLabel, useBreathTimeline } from '../lib/useBreathTimeline'
 
 const t = stages.breathe
@@ -19,6 +20,10 @@ export function Breathe({ onDone }: { onDone: () => void }) {
   return (
     <div className="layout">
       <div className="stack center grow">
+        {/* Nothing on this screen is a heading visually, but screen reader users need to know where they landed. */}
+        <h1 className="sr-only" tabIndex={-1} ref={focusScreen}>
+          Breathe
+        </h1>
         {reduce ? (
           // Reduced motion: nothing grows toward the viewer. The same rhythm plays as an opacity pulse.
           <motion.div
@@ -53,11 +58,12 @@ export function Breathe({ onDone }: { onDone: () => void }) {
           </AnimatePresence>
         </div>
 
-        <ol className="dots" aria-label={`Breath ${Math.min(completed + 1, breath.cycles)} of ${breath.cycles}`}>
+        {/* One label for the whole row. As a list, VoiceOver would also read four empty items. */}
+        <div className="dots" role="img" aria-label={`Breath ${Math.min(completed + 1, breath.cycles)} of ${breath.cycles}`}>
           {Array.from({ length: breath.cycles }, (_, i) => (
-            <li key={i} data-done={i < completed} style={{ transition: `background-color ${t.standard}ms ${cssEase(t.ease)}` }} />
+            <span key={i} data-done={i < completed} style={{ transition: `background-color ${t.standard}ms ${cssEase(t.ease)}` }} />
           ))}
-        </ol>
+        </div>
       </div>
       <div className="actions">
         <PressButton stage="breathe" variant="quiet" onClick={onDone}>
