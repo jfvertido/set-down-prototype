@@ -18,9 +18,18 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Phone: full-bleed. */
+/* Phone: full-bleed, pinned to the visible area (src/lib/keyboard.ts) rather than sized in vh or dvh.
+   Installed on the Home Screen, iOS has reported viewport heights that don't match what it draws,
+   and it never shrinks the page for the keyboard. */
 .desk { height: 100%; }
-.frame { position: relative; height: 100dvh; overflow: hidden; }
+.frame {
+  position: fixed;
+  top: var(--visible-top, 0px);
+  left: 0;
+  right: 0;
+  height: var(--visible-height, 100%);
+  overflow: hidden;
+}
 
 /* Desktop: device-sized frame so proportions match a phone. */
 @media (min-width: 600px) and (pointer: fine) {
@@ -31,6 +40,8 @@ body {
     padding: 32px;
   }
   .frame {
+    position: relative;
+    inset: auto;
     width: 390px;
     height: min(844px, calc(100vh - 64px));
     border-radius: 48px;
@@ -132,6 +143,9 @@ h1[tabindex='-1']:focus { outline: none; }
   resize: none;
 }
 .field::placeholder { color: var(--muted); }
+/* The field is always in focus while typing, so a full ring read as a heavy double border.
+   Brightening the border to full text color is still a clear focus indicator. */
+.field:focus-visible { outline: none; border-color: var(--text); }
 
 .parked { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; font-size: 18px; }
 .parked li { display: flex; gap: 12px; align-items: baseline; }

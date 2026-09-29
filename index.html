@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#2b284f" />
+    <!-- The dim's end color. Installed on the Home Screen, iOS paints the status bar with this once at
+         launch, so it stays dark rather than sitting as a lit band above the 60-second dim. -->
+    <meta name="theme-color" content="#0a0403" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Not black-translucent: installed on the Home Screen, iOS 26+ then reports a viewport 62pt shorter than
+         it draws, leaving a dead strip at the bottom, and blurs content under the status bar. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="description" content="Set Down: a short evening routine for setting the day down before sleep." />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
